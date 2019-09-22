@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Validation</title>
+    </head>
+    <body>
+        <form name="pass" method="POST" onsubmit="return  passwordcheck()" action="arrays.html">
+            <label for="Password"> Password</label>
+            <input type="password" name="Password"><br><br>
+            <label for="cPassword"> CPassword</label>
+            <input type="password" name="cPassword"><br><br>
+            <input type="submit" value="submit">
+        </form>
+        <form name="phone" method="POST" onsubmit="return phonenumber()" action="arrays.html">
+            <label for="phone1">Phone</label>
+            <input type="number" name="phone1"><br><br>
+            <input type="submit" value="submit">
+        </form> <br><br>
+        <form name="mails" method="POST" onsubmit="return Mailcheck()" action="arrays.html">
+            <label for="Email">Mail</label>
+            <input type="mail" name="Email"><br><br>
+            <input type="submit" value="Validate">
+        </form>
+
+
+
+        <script>
+            function passwordcheck()
+            {
+                var pa = document.pass.Password.value;  /// this is getelement by name
+                var cpa= document.pass.cPassword.value;
+
+                if(pa.length<6)
+                {
+                    alert("password most be 6 characters");
+
+                    return false;
+                    
+                }
+                if(pa==cpa){
+                
+                    return true;
+                    
+                }else{
+                    alert("please provide correct password");
+                    return false;
+                    
+                }
+            }
+
+            function phonenumber()
+            {
+                var ph = document.phone.phone1.value;
+                if(ph==10)
+                {
+                    return true; 
+                }
+                else
+                {
+                    alert(" please provide correct phone number ");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

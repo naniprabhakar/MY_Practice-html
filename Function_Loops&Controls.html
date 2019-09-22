@@ -1,0 +1,756 @@
+<html>
+    <head>
+        <title>Loops $ Control</title>
+
+        <script>
+            function for1()
+            {
+                document.writeln("THIS IS FOR LOOP"); //For Loop
+            }
+                for1();
+            document.writeln("<br><hr><br>");
+
+            function incre()
+            {
+                document.writeln("INCREMENT");
+            }
+                incre();
+            document.writeln("<br><br>");
+
+            function nani()
+            {
+                
+                for(i=0; i<=2; i++ )
+                {
+                    document.writeln( "adding" +" "+i+" "+"<br><br>");
+                }
+            }
+                nani();
+            
+
+            function decrement()
+            {
+                document.writeln("DECREMENT");
+            }
+                decrement();
+
+            document.writeln("<br><br>");
+            
+            function nani1()
+            {
+                var i = 2;
+                for(i=2; i>=0; i-- )
+                {
+                    document.writeln("subb"+" "+i+" "+"<br><br>");
+                }
+            }
+                nani1();
+
+            document.writeln("<br><hr><br>");
+            
+            function we()
+            {
+                document.writeln("THIS IS WHILE LOOP");  //While Loop
+            }
+                we();
+            document.writeln("<br><br><hr><br>");
+
+            function nani2()
+            {
+                var a = 20;
+                while(a<=22)
+                {
+                    document.writeln("While"+" "+a+ " " + "<br><br>");
+                    a++;
+                }
+            }
+                nani2();
+            document.writeln("<br>");
+
+            function nani3()
+            {
+                var b=30;
+                while(b>=28)
+                {
+                    document.writeln("While"+" "+ b + " "+"<br><br>");
+                    b--;
+                }
+            }
+                nani3();
+            document.writeln("<br><hr><br>");
+
+            function dw()   
+            {
+                document.writeln("THIS IS DO-WHILE LOOP");    // Do-While Loop
+            }
+                dw();
+            document.writeln("<br><br><hr><br>");
+
+            function nani4()
+            {
+                var c=20;
+                do
+                {
+                    document.writeln("DO-WHILE"+" "+c+" "+"<br><br>");
+                    c++;
+                }
+                while(c<=22);
+            }
+                nani4();
+            document.writeln("<br><br>");
+
+            function nani5()
+            {
+                var d=50;
+                do
+                {
+                    document.writeln("DO-WHILE"+" "+d+" "+"<br><br>");
+                    d--;
+                }
+                while(d>=48);
+            }
+                nani5();
+            document.writeln("<br><hr><br>");
+
+            function con()
+            {
+                document.writeln("CONTROL STATEMENTS");
+            }
+                con();
+            document.writeln("<br><br><hr><br>");
+            document.writeln("IF AND ELSE CONDITION"+" "+"<br><br>");
+
+            function nani6()    //If Condition
+            {
+                var age = 20;
+                if(age>=18)
+                {
+                    document.writeln("You are eligible for vote");
+                }
+            }
+                nani6();
+            document.write("<br><br>");
+            
+            function nani7()  //If and Else Condition
+            {
+                var age = 15;
+                if(age>=18)
+                {
+                    document.writeln("Your eligible for vote");
+                }
+                else
+                {
+                    document.writeln("Your not eligible for vote");
+                }
+            }
+                nani7();
+            document.writeln("<br><br>");
+
+            function nani8()
+            {
+                var num=20;
+                if(num%2==0)
+                {
+                    document.writeln("This Is Even Number");
+                }
+            }
+                 nani8();
+            document.writeln("<br><br>");
+
+            function nani9()
+            {
+                var num1=25;
+                if(num1%2==0)
+                {
+                    document.writeln("This is Evem Number");
+                }
+                else
+                {
+                    document.writeln("This is Odd Number");
+                }
+            }
+                nani9();
+            document.writeln("<br><br><br><br>");
+            document.writeln("ELSE-IF Condition"+"<br><br>");
+
+            function nani10()   // Else-If Conditions
+            {
+                var marks=35;
+                if(marks>=85)
+                {
+                    document.writeln("You have passed in A-Grade");
+                }
+                else if(marks>=75)
+                {
+                    document.writeln("You have passed in B-Grade");
+                }
+                else if(marks>=65)
+                {
+                    document.writeln("You have passed in C-Grade");
+                }
+                else if(marks>=50)
+                {
+                    document.writeln("You have passed in D-Grade");
+                }
+                else if(marks>=35)
+                {
+                    document.writeln("You have passed")
+                }
+                else
+                {
+                    document.writeln("You have Failed");
+                }
+            }
+                nani10();
+            document.writeln("<br><br>");
+
+
+               function nani11()
+            {
+                var marks=25;
+                if(marks>=85)
+                {
+                    document.writeln("You have passed in A-Grade");
+                }
+                else if(marks>=85 && marks<=100)
+                {
+                    document.writeln("You have passed in B-Grade");
+                }
+                else if(marks>=75 && marks<=85)
+                {
+                    document.writeln("You have passed in C-Grade");
+                }
+                else if(marks>=55 && marks<=75)
+                {
+                    document.writeln("You have passed in D-Grade");
+                }
+                else if(marks>=35 && marks<=55)
+                {
+                    document.writeln("You have passed");
+                }
+                else
+                {
+                    document.writeln("You have Failed");
+                }
+            }
+                nani11();  
+
+            document.writeln("<br><br><hr><br>");
+
+            document.writeln("Switch Condition"+"<br><br>");
+
+
+            function sw()   //Switch Conditions
+            {
+                var grade = "D";
+                var result1;
+                switch(grade)
+                {
+                    case "A": result1 = "A-Grade";
+                    break;
+                    case "B": result1 = "B-Grade";
+                    break;
+                    case "C": result1 = "C-Grade";
+                    break;
+                    case "D": result1 = "D-Grade";
+                    break;
+                    default: result1 = "Your are not passed, you have failed";
+                    break;
+                }
+                document.writeln("Result : "+result1+"<br><br>");
+            }
+                sw();
+
+            document.writeln("<br><hr><br>");
+
+
+            var grade = "c";
+            var ret;
+            switch(grade)
+            {
+                case "a" : ret = "a-Grade";
+                break;
+                case "b" : ret = "b-Grade";
+                break;
+                case "c" : ret = "c-Grade";
+                break;
+                case "d": ret = "d-Grade";
+                break;
+                default : ret = "you have failed";
+                break;
+            }
+            document.writeln("Result:"+ ret+"<br><br>");
+
+            document.writeln("<br><hr><br>");
+
+            document.writeln("VOWELS & CONSONANTS");
+            document.writeln("<br><br>")
+
+            var vowels = "h";
+            var result;
+            switch(vowels)
+            {
+                case "a": result = "a is Vowels";
+                break;
+                case "e": result = "e is Vowels";
+                break;
+                case "i": result = "i is Vowels";
+                break;
+                case "o": result = "o is Vowels";
+                break;
+                case "u": result = "u is Vowels";
+                break;
+                default : result =" Consonants";
+                break;
+            }
+            document.writeln("Result:"+result+"<br><br>");
+
+
+            document.writeln("<br><br><hr><br>");
+
+            var name ="nan";//string
+            var int = 1;//number
+
+            var x; //boolean
+            //alert(x);
+            document.writeln(+x);  
+
+            document.writeln("<br><br>");
+
+            var y= 4>2; // undefinded
+            document.writeln("Result:"+y);
+
+            document.writeln("<br><br><hr><br>");
+
+            // this is ES5 feature fuction with parameters
+            document.writeln("ES5 : Features"+"<br><br>");
+            var nan  = function()
+            {
+                document.writeln("this is ES5 without parameter"+"<br><br>");
+            }
+                nan();
+            
+            document.writeln("ES5 : Feature"+"<br><br>");
+
+            let pra = function()
+            {
+                document.writeln("This is ES5 Feature in Let without Parameter"+"<br><br>");
+            }    
+                pra();
+
+            document.writeln("ES5 : Feature"+"<br><br>");
+            
+            const su = function()
+            {
+                document.writeln("This is ES5 Feature in const without parameter"+"<br><br><br><br>");
+            }
+                su();
+            document.writeln("ES5 : Feature"+ " Simple Program"+" "+"For Loop"+"<br><br>");
+            
+            //sample program
+            let prabha = function()
+            {
+                for(i=0;i<=2;i++)
+                {
+                    document.writeln("Print"+" "+i+"<br>");
+                }
+            }
+                prabha();
+            document.writeln("<br>");
+            document.writeln("ES5 : Feature"+ " Simple Program"+ " "+"While Loop" +"<br><br>");
+
+            let prabha1 = function()
+            {
+                let i=0;
+                while(i<=2)
+                {
+                    document.writeln("print"+" "+ i +"<br>");
+                    i++;
+                }
+            }
+                prabha1();
+            
+            document.writeln("<br>");
+            document.writeln("ES5 : Feature"+ " Simple Program"+ " "+" Do While Loop" +"<br><br>");
+
+            let prabha2 = function()
+            {
+                
+                let i=0;
+                do
+                {
+                    document.writeln("print"+" "+i+"<br>");
+                    i++;
+                }
+                while(i<=2)
+            }
+                prabha2();
+            
+            document.writeln("<br>");
+            document.writeln("ES5 : Feature"+ " Simple Program"+ " "+" If Condisition" +"<br><br>");
+
+            let prabha3 = function()
+            {
+                let age = 20;
+                if(age>=18)
+                {
+                    document.writeln("You are aligible")
+                }
+            }
+                prabha3();
+            
+            
+            document.writeln("<br><br>");
+            document.writeln("ES5 : Feature"+ " Simple Program"+ " "+" If & Else Condisition" +"<br><br>");
+
+            let prabha4 = function()
+            {
+                let age1 = 25;
+                if(age1>=18)
+                {
+                    document.writeln("You are aligible");
+                }
+                else
+                {
+                    document.writeln("you are not Aligible");
+                }
+            }
+                prabha4();
+                
+            document.writeln("<br><br>");
+            document.writeln("ES5 : Feature"+ " Simple Program"+ " "+"Else-IF Condisition" +"<br><br>");
+
+            let prabha5 = function()
+            {
+                let marks=76;
+                if(marks>=85)
+                {
+                    document.writeln("A-Grade");
+                }
+                else if(marks>=75)
+                {
+                    document.writeln("B-Grade");
+                }
+                else if(marks>=65)
+                {
+                    document.writeln("C-Grade");
+                }
+                else if(marks>=55)
+                {
+                    document.writeln("D-Grade");
+                }
+                else if(marks>=35)
+                {
+                    document.writeln("Just Pass");
+                }
+                else
+                {
+                    document.writeln("You are Field");
+                }
+            }
+                prabha5();
+        
+            document.writeln("<br><br>");
+            document.writeln("ES5 : Feature"+ " Simple Program"+" Without Parameter"+"<br><br>");
+
+            let prabha6 = function(a,b)
+            {
+                let c = a*b;
+                document.writeln("Print The Volue"+c+"<br><br>");
+            }
+                prabha6(5,3);
+
+            document.writeln("<br><br><hr>");
+            document.writeln("ES6 : Feature"+"<br><br>");
+
+            let sur = ()=>
+            {
+                document.writeln("Hi This is ES6 Feature");
+            }
+                sur();
+            
+            document.writeln("<br><br>");
+            
+            const sur1 = ()=>
+            {
+                document.writeln("Print ES6 Feature");
+            }
+                sur1();
+
+            document.writeln("<br><br>");
+
+            let sur2 = (a,b)=>
+            {
+                c=a*b;
+                document.writeln("print"+" "+ c);
+            }
+                sur2(5,6);
+            document.writeln("<br><br>");
+
+            const sur3 = (m,n)=>
+            {
+                p=m+n;
+                document.writeln("Print"+" "+p);
+            }
+                sur3(30,10);
+            
+            document.writeln("<br><br><hr><br>");
+            document.writeln("ARRARYS"+" & "+"STRINGS"+"<br><br>");
+
+            let ar = [10,20,30]  //numbers
+                //document.writeln("arrary"+ar+"<br><br>");
+                for(i=0;i<=ar.length-1;i++)
+                {
+                    document.writeln("Print"+" "+ar[i]+"<br><br>");
+                }
+
+            document.writeln("<br>");
+
+            let arr = ["ravi","raju","ganesh","nani"]
+            for(i=0;i<=arr.length-1;i++)
+            {
+                document.writeln("Names:"+" "+arr[i]+"<br>");
+            }
+
+            document.writeln("<br><br>");
+            document.writeln("New Operater in Arrary"+"<br><br>");
+
+           let arr1 = new Array();
+            arr1[0]="ravi";
+            arr1[1]="raju";
+            for(i=0;i<=arr1.length-1;i++)
+            {
+                document.writeln("Print:"+arr1[i]+"<br>");
+            } 
+        
+           document.writeln("<br>");
+
+            let arr2 = new Array();
+            arr2[0]=20;
+            arr2[1]=30;
+            arr2[2]=40;
+            for(i=0;i<=arr2.length-1;i++)
+            {
+                document.writeln("Print:"+arr2[i]+"<br>");
+            }       
+        
+        
+           document.writeln("<br>");
+
+           let arr3 = new Array();
+           arr3[0]="harish";
+           arr3[1]="manisha";
+           arr3[2]="kiran";
+           arr3[3]="man";
+ 
+           for(i=0;i<arr3.length;i++){
+ 
+           document.writeln("this is default array constructor:"+arr3[i]+"<br>");
+          } 
+
+          document.writeln("<br>");
+
+          let kkk = new Array();
+          kkk[0]=20;
+          kkk[1]=30;
+          for(i=0;i<=kkk.length-1;i++)
+          {
+              document.writeln("Print:"+kkk[i]+"<br>");
+          }
+
+          document.writeln("<br>");
+          // creating with new operator with parameterized constructor
+
+          let pra1 = new Array("ashok","Nani","Ravi","Raju");
+          for(i=0;i<=pra1.length-1;i++)
+          {
+              document.writeln("Prints:"+pra1[i]+"<br>");
+          }
+
+          document.writeln("<br><br>");
+
+          let pra2 = new Array("Gun","Hyd","Ten");
+          for(i=0;i<=pra2.length-1;i++)
+          {
+              document.writeln("Print:"+pra2[i]+"<br>");
+          }
+
+          document.writeln("<br><br>");
+
+          // String started
+
+          var str = "Nani";
+          document.writeln("Print:"+" "+str+"<br>");
+            
+          document.writeln("<br><hr><br>");
+          
+          // Obtects
+          document.writeln("OBJECTS"+"<br><br>");
+
+          let obj = {id:10,name:"ravi",salary:25000};
+
+
+          
+          document.writeln(obj.id+" "+obj.name+" "+obj.salary+"<br>");
+
+          let obj1 = {id:2456,name:"Prabhakar",salary:55000};
+          document.writeln(obj1.id+" "+obj1.name+" "+obj1.salary+"<br>");
+
+          document.writeln("<br>");
+
+          let obj2 = new Object();
+           
+           obj2.id=20;
+           obj2.name="Ravi";
+           obj2.salary=50000;
+           obj2.village="Guntur";
+
+           document.writeln("Job:"+" "+obj2.id+" "+obj2.name+" "+obj2.salary+" "+obj2.village+"<br><br>");
+
+           document.writeln("<br><hr><br>");
+
+           document.writeln("OOPS");   //OOPs
+           document.writeln("<br><br>");
+
+           //Declaring class  
+            
+           class school
+                {
+                    constructor(roll,name)
+                    {
+                        this.id=roll;
+                        this.name=name;
+                    }
+                    details()
+                    {
+                        document.writeln(this.id+" "+this.name+"<br>");
+                    }
+                }
+                var st1=new school(01,"Ravi");
+                var st2=new school (02,"nani");
+                st1.details();
+                st2.details();
+
+                document.writeln("<br><hr><br>");
+                document.writeln("ABSTRUCTION"+"<br><br>");  //Abstructor
+                
+
+                //Creating a constructor function  
+                function Vehicle()  
+                {  
+                this.vehicleName="vehicleName";  
+                throw new Error("You cannot create an instance of Abstract Class");  
+                }  
+                Vehicle.prototype.display=function()  
+                {  
+                return "Vehicle is: "+this.vehicleName;  
+                }  
+                //Creating a constructor function  
+                function Bike(vehicleName)  
+                {  
+                this.vehicleName=vehicleName;  
+                }  
+                //Creating object without using the function constructor  
+                Bike.prototype=Object.create(Vehicle.prototype);  
+                var bike=new Bike("Honda");  
+                document.writeln(bike.display());  
+
+                document.writeln("<br><br>");
+
+                function Book()
+                {
+                    this.bookname="bookname";
+                    throw new Error("you connot create an instance of abstract class");
+                }
+                Book.prototype.display=function()
+                {
+                    return "Book is: "+this.bookname;
+                }
+                function Telugu(bookname)
+                {
+                    this.bookname="bookname";  
+                }
+                Telugu.prototype=Object.create(Book.prototype);
+                var telugu = new Telugu("Panchathantram");
+                document.writeln(telugu.display());
+
+                document.writeln("<br><hr><br>");
+                document.writeln("POLYMARPHISM"+"<br><br>"); //Polymarphism
+
+            class A
+            {
+                display()
+                {
+                    document.writeln("A is invoked<br>");
+                }
+            }
+            class B extends A
+            {
+                display()
+                {
+                    document.writeln("B is invoked");
+                }
+            }
+
+            var a=[new A(),new B()]
+            a.forEach(function(msg)
+            {
+                msg.display();
+            }); 
+            
+            
+            document.writeln("<br><hr><br>");
+            document.writeln("INHERITANCE"+"<br><br>"); //Inheritance
+            
+            class Moment extends Date {  
+             constructor() {  
+                super();  
+                 }}  
+            var m=new Moment();  
+            document.writeln("Current date:")  
+            document.writeln(m.getDate()+"-"+(m.getMonth()+1)+"-"+m.getFullYear()); 
+
+            document.writeln("<br><hr><br>");
+            document.writeln("ENCAPSULATION"+"<br><br>"); //Encapsulation
+
+            class Student  
+             {  
+                constructor()  
+                {  
+                    var name;  
+                    var marks;  
+                }  
+            getName()  
+              {  
+                  return this.name;  
+              }  
+            setName(name)  
+              {  
+                this.name=name;  
+                }  
+        
+            getMarks()  
+              {  
+                return this.marks;  
+                }  
+            setMarks(marks)  
+            {  
+              this.marks=marks;  
+            }  
+  
+            }  
+            var stud=new Student();  
+            stud.setName("John");  
+            stud.setMarks(80);  
+            document.writeln(stud.getName()+" "+stud.getMarks()); 
+            
+          
+        </script>        
+
+
+
+    </head>
+    <body>
+
+    </body>
+</html>

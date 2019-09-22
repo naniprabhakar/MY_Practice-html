@@ -1,0 +1,240 @@
+<html>
+    <head>
+        <style>
+        
+        </style>
+        <script>
+           var id = 20; // Global Variable
+           var name = "SP"; // Global Variable
+           var b = true; // Global Variable
+           var c = 'C'; // Global Variable       
+
+           function display1() // Non-parameterized function
+           {
+              document.writeln("<h1>JAVASCRIPT PROGRAM PRACTICE</h1>");
+              document.writeln("THIS IS NON-PARAMETERIZED FUNCTION");
+              document.writeln("<br><br><br>");
+              var age = 33; // Local Variable    
+              var salary = 20; // Global Variable
+
+              document.writeln(id+"  =  "+name + "  =  " +age + "  =  " +salary + "  =  " +b + "  =  " +c);
+              document.writeln("<br><br><br><br><br>");
+           } 
+
+           display1(); // Function calling
+
+           var cbalance = 2000000;
+
+           function withdraw(eamount) // Non-parameterized function
+           {
+                document.writeln("THIS IS A PARAMETERIZED FUNCTION");
+                document.writeln("<br><br><br>");
+                document.writeln("Your current balance before withdrawal :"+cbalance);
+                document.writeln("<br><br><br>");
+                cbalance = cbalance - eamount;
+                document.writeln("You have withdrawed :"+eamount);
+                document.writeln("<br><br><br>");
+            }
+
+            withdraw(20000); // Function calling
+
+            function arthimeticOperations(a,b)
+            {
+                document.writeln("ARTHIMETIC OPERATION START");
+                document.writeln("<br><br><br>");
+                var c1 = a + b;
+                var c2 = a - b;
+                var c3 = a * b;
+                var c4 = a / b;
+                var c5 = a % b;
+                var c6 = a++;
+                var c7 = a--;
+
+                document.writeln("Addition :"+c1 +"<br><br>"+ "Substraction :" + c2 + "<br><br>" + "Multiflication :" +c3 + "<br><br>" + "Division :" + c4 + "<br><br>" + "Modulo Division :" + c5+ "<br><br>" + "Increament :" +c6 + "<br><br>" + "Decreament :" + c7);
+            }
+            arthimeticOperations(2,3);
+
+             function LogicalOperators(a, b) 
+             {
+                    document.writeln("<br><br><br>CONTROL STATEMENTS<br><br><br>");
+                    document.writeln("Your eligible for vote<br><br><br>");
+                    var a = 100;
+                    if (a > 10) 
+                    {
+                      document.write("value of a is greater than 10"+"<br><br>");
+                    }  
+                    else
+                    {
+                        document.write("value of a is not-greater than 10" + "<br><br>");
+                    }    
+
+                    var b = 100;
+                    if (b % 2 == 0) 
+                    {
+                        document.write("b is even number<br><br><br>");
+                    }
+                    else 
+                    {
+                        document.write("b is odd number<br><br><br>");
+                    }  
+                    var age = 17;
+                    if (age >= 18) 
+                    {
+                        document.write("Your eligible for vote<br><br><br>");
+                    }
+                    else 
+                    {
+                        document.write("Your not eligible for vote<br><br><br>");
+                    }  
+                    var result = 55;
+                    if(result <= 75)
+                    {
+                        document.write("You have passed in A-Grade<br><br><br>");
+                    }
+                    else if(result <= 65) 
+                    {
+                       document.write("You have passed in B-Grade<br><br><br>");
+                    }
+                    else if (result <= 55) 
+                    {
+                        document.write("You have passed in C-Grade<br><br><br>");
+                    }
+                    else if (result <= 45) 
+                    {
+                        document.write("You have passed in D-Grade<br><br><br>");
+                    }
+                    else if(result <= 35) 
+                    {
+                        document.write("You have just passed <br><br><br>");
+                    }
+                    else
+                    {
+                        document.writeln("you have failed <br><br><br>");
+                    } 
+
+                    var grade = "C";
+                    var result1 ;
+                    switch (grade) 
+                    {
+                        case "A": result1 = "A-Grade";                        
+                        break;
+                        case "B": result1 = "B-Grade";
+                        break;
+                        case "C": result1 = "C-Grade";
+                        break;
+                        case "D": result1 = "D-Grade";
+                        break;
+                        default: result1 = "Your are not passed, you have failed";
+                        break;
+                    }
+                    document.writeln("Result : "+result1 +"<br><br><br>");
+                    
+
+                    for (i = 1; i <= 3; i++) 
+                    {
+                       document.writeln("For Loop Valuve :  "+i + "<br><br>");
+                    }  
+  
+                    var v = 200;
+                   
+                    while(v<=202) 
+                    {
+                       document.writeln("While Loo value is :"+v+"<br><br>");
+                       v++;
+                    }
+
+                    var v1 = 3;
+                    do 
+                    {
+                       document.write("Do while loop value  :"+v1 + "<br/><br>");
+                       v1++;
+                    }while (v1 <= 5);  
+
+                    
+                    var r = 5;
+                    var s = "5";
+
+                    if(r == s)
+                    {
+                        document.writeln("<br><br><br>Two values are equal i.e only checking 2 values but not It's type");
+                    }
+                    
+                    if (r === s) 
+                    {
+                      document.writeln("<br><br><br>Two vales are equal"); 
+                    }
+                    else
+                    {
+                        document.writeln("<br><br><br>Two values are not equal i.e  checking 2 values with  It's type");
+                    }
+                    
+                    if(r != s) 
+                    {
+                        document.writeln("<br><br><br>Two vales are  equal");
+                    }
+                    else 
+                    {
+                        document.writeln("<br><br><br>Two values are not equal ");
+                    }
+
+                    
+                    if (r !== s) 
+                    {
+                        document.writeln("<br><br><br>Two values are not equal");
+                    }
+                    else 
+                    {
+                        document.writeln("<br><br><br>Two values are  equal ");
+                    }
+
+                    var a1 = 20;
+                    if(a1>=21)
+                    {
+                       document.writeln("<br><br><br> Value of a is greater than 20");
+                    }
+                    else
+                    {
+                       document.writeln("<br><br><br> Value of a is not greater than 20");
+                    }
+
+                    var b1 = 10;
+                    var b2 = 20;
+
+                    if(b1<=1 && b2<=20 )
+                    {
+                         document.writeln("<br><br><br>Logical AND Operator : true ");
+                    }
+                    else
+                    {
+                        document.writeln("<br><br><br>Logical AND Operator : False ");   
+                    }
+
+                    
+                    if (b <= 10 || b2 <= 20) 
+                    {
+                        document.writeln("<br><br><br>Logical OR Operator : true ");
+                    }
+                    else 
+                    {
+                        document.writeln("<br><br><br>Logical OR Operator : False ");
+                    }
+
+                    var v3 = 1;
+                    if(!v3==1)
+                    {
+                       document.writeln("<br><br><br> value of v3 is is not equals to :"+v3);
+                    }
+                    else
+                    {
+                       document.writeln("<br><br><br> value of v3 is is equals to :" + v3);
+                    }
+                    
+             }
+             LogicalOperators(2, 3);
+
+        </script>
+    </head>
+    <body>
+   
+    </body>
+</html>
